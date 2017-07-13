@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		FAAAFBBA1F17651B0004900D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAFBB91F17651B0004900D /* AppDelegate.swift */; };
 		FAAAFBBC1F17651B0004900D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAFBBB1F17651B0004900D /* ViewController.swift */; };
-		FAAAFBBF1F17651B0004900D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAAFBBD1F17651B0004900D /* Main.storyboard */; };
 		FAAAFBC11F17651B0004900D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAAFBC01F17651B0004900D /* Assets.xcassets */; };
 		FAAAFBC41F17651B0004900D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAAFBC21F17651B0004900D /* LaunchScreen.storyboard */; };
 		FAAAFBCF1F17651B0004900D /* mymvcappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAFBCE1F17651B0004900D /* mymvcappTests.swift */; };
 		FAAAFBDA1F17651B0004900D /* mymvcappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAFBD91F17651B0004900D /* mymvcappUITests.swift */; };
+		FAAAFBEC1F1767050004900D /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAFBEB1F1767050004900D /* MainTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 		FAAAFBB61F17651B0004900D /* mymvcapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mymvcapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAAFBB91F17651B0004900D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAAAFBBB1F17651B0004900D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAAAFBBE1F17651B0004900D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAAAFBC01F17651B0004900D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAAAFBC31F17651B0004900D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAAAFBC51F17651B0004900D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		FAAAFBD51F17651B0004900D /* mymvcappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mymvcappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAAFBD91F17651B0004900D /* mymvcappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mymvcappUITests.swift; sourceTree = "<group>"; };
 		FAAAFBDB1F17651B0004900D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAAFBEB1F1767050004900D /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				FAAAFBB91F17651B0004900D /* AppDelegate.swift */,
-				FAAAFBBB1F17651B0004900D /* ViewController.swift */,
-				FAAAFBBD1F17651B0004900D /* Main.storyboard */,
-				FAAAFBC01F17651B0004900D /* Assets.xcassets */,
-				FAAAFBC21F17651B0004900D /* LaunchScreen.storyboard */,
-				FAAAFBC51F17651B0004900D /* Info.plist */,
+				FAAAFBE71F1765340004900D /* Models */,
+				FAAAFBE81F17653E0004900D /* Views */,
+				FAAAFBE91F1765430004900D /* Controllers */,
+				FAAAFBEA1F1765760004900D /* Others */,
 			);
 			path = mymvcapp;
 			sourceTree = "<group>";
@@ -123,6 +122,39 @@
 				FAAAFBDB1F17651B0004900D /* Info.plist */,
 			);
 			path = mymvcappUITests;
+			sourceTree = "<group>";
+		};
+		FAAAFBE71F1765340004900D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FAAAFBE81F17653E0004900D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAFBEB1F1767050004900D /* MainTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FAAAFBE91F1765430004900D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAFBBB1F17651B0004900D /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FAAAFBEA1F1765760004900D /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAFBC01F17651B0004900D /* Assets.xcassets */,
+				FAAAFBC21F17651B0004900D /* LaunchScreen.storyboard */,
+				FAAAFBC51F17651B0004900D /* Info.plist */,
+			);
+			name = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +266,6 @@
 			files = (
 				FAAAFBC41F17651B0004900D /* LaunchScreen.storyboard in Resources */,
 				FAAAFBC11F17651B0004900D /* Assets.xcassets in Resources */,
-				FAAAFBBF1F17651B0004900D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAAAFBBC1F17651B0004900D /* ViewController.swift in Sources */,
+				FAAAFBEC1F1767050004900D /* MainTableViewCell.swift in Sources */,
 				FAAAFBBA1F17651B0004900D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +328,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FAAAFBBD1F17651B0004900D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAAAFBBE1F17651B0004900D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FAAAFBC21F17651B0004900D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

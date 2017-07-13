@@ -33,9 +33,7 @@ class ViewController: UIViewController {
     }
     
     func configureConstraints() {
-        tableView <- [
-            Top =
-        ]
+       tableView.frame = view.frame
     }
 }
 
